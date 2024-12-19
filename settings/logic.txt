@@ -1,0 +1,37 @@
+#self.query_one('#txt', Label).update("Deu certo")
+"""
+import asyncio
+async def teste3():
+    async def teste():
+        await asyncio.sleep(3)
+        D[7] = 356
+    async def teste2():
+        await asyncio.sleep(4)
+        D[8] = 356
+
+    task1 = asyncio.create_task(
+        teste())
+    task2 = asyncio.create_task(
+        teste2())
+    await task1
+    await task2
+
+M[4] = True
+if M[4]:
+    #asyncio.gather(teste(),teste2())
+    asyncio.run(teste3())
+    #await teste3()
+    #asyncio.run(k)
+    #asyncio.run(asyncio.gather(teste3()))
+    #self.query_one('#txt', Label).update("aqui")
+    
+    D[4] = 37
+"""
+#python C:\Users\alexandre.ribeiro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts\textual.exe console
+
+#python C:\Users\alexandre.ribeiro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts\textual.exe run --dev modbus_server.py
+
+
+#python C:\Users\alexandre.ribeiro\AppData\Local\Programs\Python\Python312\Scripts\textual.exe console
+
+#python C:\Users\alexandre.ribeiro\AppData\Local\Programs\Python\Python312\Scripts\textual.exe run --dev modbus_server.py

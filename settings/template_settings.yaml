@@ -1,0 +1,36 @@
+data_block:
+  coils:
+    default: true
+    qty: 300
+  discrete_inputs:
+    default: false
+    qty: 1
+  holding_registers:
+    default: true
+    qty: 1000
+  input_registers:
+    default: false
+    qty: 3
+  watch_window_size: 10
+identification:
+  ip_address: 127.0.0.1
+  major_minor_revision: '1.0'
+  model_name: Modbus
+  port: 5020
+  product_code: '1'
+  product_name: Modbus Server
+  user_application_name: Modbus Server Test
+  vendor_name: None
+  vendor_url: https://github.com/AlexandreRibeiro28
+time_logical_dependencies:
+  dependence_1:
+    input_1: hr_1
+    logical_block: null
+    output_1: c_2
+    time_constraint_ms: 1
+  dependence_2:
+    input_1: hr_2
+    input_2: hr_3
+    logical_block: and
+    output_1: c_3
+    time_constraint_ms: 1

@@ -1,0 +1,10 @@
+D0;;25;Decimal;Word [Signed];This is Register 0
+D2;;-53;Decimal;Double Word [Signed];This is Register 2
+M3;;False;Bin;Bit;This is Coil 3
+M4;;True;Bin;Bit;This is Coil 4
+;;; ; ;
+;;; ; ;
+;;; ; ;
+;;; ; ;
+;;; ; ;
+;;; ; ;

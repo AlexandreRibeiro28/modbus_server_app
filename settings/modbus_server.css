@@ -1,0 +1,301 @@
+Screen {
+    align: center top;
+}
+.watch_window{
+    layout: horizontal;
+    align: center middle;
+    width: 100%;
+    height: auto;
+}
+.label {
+    layout: horizontal;
+    align: center middle;
+    width: 100%;
+    height: 5%;
+    /*background: red;*/
+}
+.buttons {
+    layout: horizontal;
+    align: center middle;
+    width: 100%;
+    height: 13%;
+    /*background: green;*/
+}
+.btn_start_server {
+    margin: 0 1 0 3;
+}
+.btn_stop_app {
+    margin: 0 1 0 3;
+}
+.btn_save {
+    margin: 0 1 0 3;
+}
+.btn_load {
+    margin: 0 1 0 3;
+}
+.watch_window_colunms {
+    layout: horizontal;
+    align: center middle;
+    width: auto;
+    height: auto;
+    padding-left: 7;
+    padding-bottom: 1;
+    /*background: blue;*/
+}
+.watch_window_rows {
+    layout: horizontal;
+    align: center middle;
+    width: 100%;
+    height: auto;
+    /*margin: 5 5 1 0;
+    background: blue;*/
+}
+.c0 {
+    padding-right: 1;
+    width: 10;
+    height: auto;
+}
+.device_addr {
+    width: 12;
+    align: center middle;
+    height: auto;
+}
+.c1 {
+    padding-left: 2;
+    width: 15;
+    height: auto;
+}
+.prepared_value {
+    width: 15;
+    height: auto;
+}
+.c2 {
+    padding-left: 6;
+    width: 20;
+    height: auto;
+}
+.current_value {
+    width: 30;
+    height: auto;
+}
+.c3 {
+    padding-left: 12;
+    width: 30;
+    height: auto;
+}
+.display_format {
+    width: 20;
+    height: auto;
+}
+.c4 {
+    /*background: red;*/
+    padding-left: 9;
+    width: 30;
+    height: auto;
+}
+.data_type {
+    width: 30;
+    height: auto;
+}
+.c5 {
+    padding-left: 15;
+    width: 40;
+    height: auto;
+}
+.comment {
+    width: 40;
+    height: auto;
+}
+
+WrongValueScreen > Container {
+    width: auto;
+    height: auto;
+    padding: 1 2;
+    background: $panel;
+}
+WrongValueScreen {
+    align: center middle;
+}
+* {
+    transition: background 500ms in_out_cubic, color 500ms in_out_cubic;
+}
+Sidebar {
+    width: 30%;
+    height: 100%;
+    dock: left;
+    background: $panel;
+    transition: offset 500ms in_out_cubic;
+    layer: overlay;
+}
+Sidebar:focus-within {
+    offset: 0 0 !important;
+}
+
+Sidebar.-hidden {
+    offset-x: -100%;
+}
+Sidebar Title {
+    background: $boost;
+    color: $secondary;
+    padding: 2 4;
+    border-right: vkey $background;
+    dock: top;
+    text-align: center;
+    text-style: bold;
+}
+.btn_edit {
+    margin: 0 0 2 1;
+}
+.btn_save_settings {
+    margin: 0 0 1 3;
+}
+.ip {
+    layout: horizontal;
+    align: center middle;
+    width: 100%;
+    height: auto;
+    /*
+    margin-top: 1;
+    width: 100%;
+    height: 10%;
+    */
+}
+.ip_address_label{
+    width: 60%;
+    height: auto;
+    padding-top: 1;
+}
+.ip_address_input{
+    width: 40%;
+    height: auto;
+    padding-top: 0;
+} 
+/* .ip{
+    layout: horizontal;
+    align: center middle;
+    padding: 2 4;
+    background: green;
+}*/
+.port{
+    layout: horizontal;
+    align: center middle;
+    width: 100%;
+    height: auto;
+    /*
+    margin-top: 0;
+    width: 100%;
+    height: 9%;
+    */
+} 
+.port_label{
+    width: 60%;
+    height: auto;
+    padding-top: 1;
+}
+.port_input{
+    width: 40%;
+    height: auto;
+    margin-top: 0;
+}
+
+.watch_window_size{
+    layout: horizontal;
+    align: center middle;
+    width: 100%;
+    height: auto;
+    /*
+    margin-top: 0;
+    width: 100%;
+    height: 9%;
+    */
+} 
+.watch_window_size_label{
+    width: 60%;
+    height: auto;
+    padding-top: 1;
+}
+.watch_window_size_input{
+    width: 40%;
+    height: auto;
+    margin-top: 0;
+}
+.coils_quantity{
+    layout: horizontal;
+    align: center middle;
+    width: 100%;
+    height: auto;
+    /*
+    margin-top: 0;
+    width: 100%;
+    height: 9%;
+    */
+} 
+.coils_quantity_label{
+    width: 60%;
+    height: auto;
+    padding-top: 1;
+}
+.coils_quantity_input{
+    width: 40%;
+    height: auto;
+    margin-top: 0;
+}
+.registers_quantity{
+    layout: horizontal;
+    align: center middle;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    /*
+    margin-top: 0;
+    width: 100%;
+    height: 9%;
+    */
+} 
+.registers_quantity_label{
+    width: 60%;
+    height: auto;
+    padding-top: 1;
+}
+.registers_quantity_input{
+    width: 40%;
+    height: auto;
+    margin-bottom: 1;
+}
+Message {
+    margin: 0 1;
+    text-align: left;
+    text-style: bold;
+}
+Message_2 {
+    margin: 1 0 0 0;
+    text-align: center;
+    text-style: bold;
+}
+OptionGroup {
+    background: $boost;
+    color: $text;
+    margin-top: 1;
+    height: 1fr;
+    border-right: vkey $background;
+}
+.buttons_sidebar {
+    layout: horizontal;
+    align: center middle;
+    width: 100%;
+    height: 13%;
+    /*background: green;*/
+}
+/*Input {
+    width: 11;
+    height: 3;
+}
+.inputs {
+    width: 10%;
+}
+.watch_table {
+    width: 90%;
+}
+Table {
+    width: 15;
+}*/
